@@ -95,6 +95,8 @@ Summary:
 1. **Hardcoded infrastructure paths in bridge module** — `bridge_crab_fm.py`
    contained hardcoded Windows paths to the founder-mode repo. Replaced with
    `FM_REPO` / `FM_BUS_PATH` environment variables with sensible defaults.
+   (Note: `bridge_crab_fm.py` has since been moved to the private
+   `crab-incubator` repo per `docs/REPO_BOUNDARIES.md`.)
 2. **Hardcoded global bus script path** — `bus/crab_bus.py` contained a
    hardcoded path to a bus-global script. Replaced with `BUS_GLOBAL_SCRIPT`
    env var; returns `False` when unset.

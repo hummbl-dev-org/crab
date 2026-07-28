@@ -6,7 +6,8 @@
 
 ## Scope
 
-- In scope: 4-step protocol (CRAWL/Check → Reason → Act → Bus), pluggable bus backends (TSV, JSONL, stdout, custom callback), multi-lane work streams with separate schedules and stop conditions, daemon (`crab_daemon.py`), lane optimizer (`crab_lane_optimizer.py`), FM bridge (`bridge_crab_fm.py`), examples and docs
+- In scope: 4-step protocol (CRAWL/Check → Reason → Act → Bus), pluggable bus backends (TSV, JSONL, stdout, custom callback), multi-lane work streams with separate schedules and stop conditions, daemon (`crab_daemon.py`), lane optimizer (`crab_lane_optimizer.py`), examples and docs
+- Out of scope: FM bridge (`bridge_crab_fm.py` — moved to private `crab-incubator` repo), productization planning (`PRODUCTIZATION.md` — moved to `crab-incubator`)
 - Out of scope: Consumer app features, governance primitive implementation (lives in `hummbl-governance`)
 
 ## Setup

@@ -10,7 +10,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - (placeholder for upcoming changes)
 
+## [v0.1.0] - 2026-07-13
+
+### Added
+- Public split from `crab-incubator` — fresh repo export with no inherited history
+- Developer brief (`docs/DEVELOPER_BRIEF.md`)
+- Self-hosted CI runner (Anvil WSL)
+
+### Changed
+- Package version set to `0.1.0` for initial public release (pyproject.toml)
+
 ## [v1.0.0] - 2026-05-10
+
+> **Note:** This version was released in the private `crab-incubator` repo prior to the public split on 2026-07-13. The public `crab` repo starts at `v0.1.0`.
 
 ### Added
 - Portable CRAB Daemon (`crab_daemon.py`) — stdlib-only, zero dependencies

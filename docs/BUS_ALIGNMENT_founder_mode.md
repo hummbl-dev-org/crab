@@ -7,6 +7,10 @@
 > implemented as `bridge_crab_fm.py`. It uses `FM_REPO` and `FM_BUS_PATH`
 > environment variables for path configuration. This document is retained as
 > the original gap analysis that motivated the bridge.
+>
+> **Update (2026-07-28):** `bridge_crab_fm.py` has been moved to the private
+> `crab-incubator` repo per `docs/REPO_BOUNDARIES.md`. The code snippet below
+> is retained for historical reference.
 
 ---
 
