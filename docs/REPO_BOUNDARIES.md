@@ -39,10 +39,8 @@ Public positioning should stay narrow:
 
 Keep these private or move them under an internal namespace before any public release:
 
-- `bridge_crab_fm.py` — HUMMBL/founder-mode bridge with local infrastructure assumptions.
 - `docs/BUS_ALIGNMENT_founder_mode.md`.
 - `docs/DEMO_governance_maturity.md`, if it remains HUMMBL-demo-specific.
-- `PRODUCTIZATION.md`.
 - `GITEA_MIRROR.md`.
 - `docs/UNIFIED_ROADMAP.md`.
 - `docs/peer_reviews/*`.
@@ -68,3 +66,10 @@ removed from the public tree. They are retained in internal/private storage:
 - `docs/ai-notary-*` — notary framework docs; moved to internal-only storage.
 - `docs/universal-jv-outreach-framework.md` — JV outreach framework; moved to
   internal-only storage.
+
+## Relocated artifacts (2026-07-28)
+
+- `bridge_crab_fm.py` — HUMMBL/founder-mode bridge; moved to `crab-incubator`
+  (already present there). Removed from public repo to keep it fully portable.
+- `PRODUCTIZATION.md` — internal productization plan ("INTERNAL — operator eyes
+  only"); moved to `crab-incubator` (already present there).

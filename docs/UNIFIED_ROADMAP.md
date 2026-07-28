@@ -173,7 +173,7 @@ Before listing what CRAB will do, here is what it currently gets wrong. These ar
 
 ## Track 4: Productization Pipeline
 
-**Source:** `PRODUCTIZATION.md` -- 3 tiers, redteam-before-ship discipline.
+**Source:** `PRODUCTIZATION.md` (moved to `crab-incubator` 2026-07-28) -- 3 tiers, redteam-before-ship discipline.
 
 ### Tier 1: Ship-Ready Now
 

@@ -387,21 +387,18 @@ class TestCLI:
 
 
 class TestBusBridge:
-    """Test CRAB -> founder-mode bus bridge."""
+    """Test CRAB -> founder-mode bus bridge.
+
+    The bridge_crab_fm.py module has been moved to the private crab-incubator
+    repo (see docs/REPO_BOUNDARIES.md). These tests are skipped in the public
+    repo because the bridge module is no longer present here.
+    """
 
     def test_bridge_extracts_retrograde_from_log(self, tmp_path):
         """bridge_once parses Retrograde + BUS lines and returns structured data."""
-        log = tmp_path / "test-daemon.log"
-        log.write_text(
-            "2026-05-11T20:30:00Z INFO === CRAB turn: cleanup ===\n"
-            "2026-05-11T20:30:01Z INFO [BUS] 2026-05-11T20:30:01Z crab-daemon -> all [STATUS] [cleanup] OK - Pruned 2 branches\n"
-            '2026-05-11T20:30:01Z INFO RETROGRADE: validated=True dissonance=0.00 scuttle=False findings=["OK: pruned == found"]\n',
-            encoding="utf-8",
-        )
-        from bridge_crab_fm import bridge_once
-        # bridge_once posts to founder-mode bus; we just verify it doesn't crash
-        rc = bridge_once(log)
-        assert rc in (0, 1)  # 0 = posted, 1 = post failed (bus may be unavailable in CI)
+        import pytest
+
+        pytest.skip("bridge_crab_fm.py moved to crab-incubator (private repo)")
 
 
 class TestRetrogradePhase:

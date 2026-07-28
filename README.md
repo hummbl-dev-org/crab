@@ -216,7 +216,6 @@ Run `python -m pytest tests/ -q` to validate the local suite. Bridge tests (`Tes
 - [Release Notes](docs/RELEASE_NOTES.md) — draft/stable protocol status
 - [Repo Boundaries](docs/REPO_BOUNDARIES.md) — public-core vs. HUMMBL-internal surfaces
 - [Security Audit](AUDIT.md) — redteam audit results (10/10 PASS)
-- [Productization Plan](PRODUCTIZATION.md) — roadmap from internal ops to marketable product
 
 ## Contributing
 

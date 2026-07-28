@@ -28,7 +28,6 @@ test = [
 
 [tool.setuptools]
 py-modules = [
-  "bridge_crab_fm",
   "crab_daemon",
   "crab_lane_optimizer",
 ]
