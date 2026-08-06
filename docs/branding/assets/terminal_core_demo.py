@@ -364,19 +364,19 @@ def main():
 
     # Clear screen if possible
     if not no_clear:
-        os.system("cls" if os.name == "nt" else "clear")
+        os.system("cls" if os.name == "nt" else "clear")  # nosec B605 — hardcoded terminal command, no user input
 
     demo_splash(tc, auto=auto_advance)
     if not no_clear:
-        os.system("cls" if os.name == "nt" else "clear")
+        os.system("cls" if os.name == "nt" else "clear")  # nosec B605 — hardcoded terminal command, no user input
 
     demo_scut(tc, auto=auto_advance)
     if not no_clear:
-        os.system("cls" if os.name == "nt" else "clear")
+        os.system("cls" if os.name == "nt" else "clear")  # nosec B605 — hardcoded terminal command, no user input
 
     demo_chrome(tc, auto=auto_advance)
     if not no_clear:
-        os.system("cls" if os.name == "nt" else "clear")
+        os.system("cls" if os.name == "nt" else "clear")  # nosec B605 — hardcoded terminal command, no user input
 
     demo_little_buddy(tc, auto=auto_advance)
 
